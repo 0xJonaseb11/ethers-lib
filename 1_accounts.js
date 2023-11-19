@@ -1,5 +1,7 @@
 const { ethers } = require("ethers");
-// const INFURA_ID = process.env.API_KEY_SECRET;
+//  const INFURA_ID = process.env.INFURA_API_KEY;
+const INFURA_ID = "49df6b4d7d7d4727a9e499a46bfb003d";
+
 // console.log(INFURA_ID);
 
 // // use Infura node
