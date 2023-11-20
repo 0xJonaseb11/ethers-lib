@@ -19,4 +19,5 @@ const main = async () => {
     console.log(`'nLogging first transaction in block: \n`);
     console.log(transactions[0]);
 }
+
 main();

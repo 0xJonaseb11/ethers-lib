@@ -30,9 +30,6 @@ const main = async () => {
 
     // format ether
     console.log(`Balance Formatted: ${ethers.utils.formatEther(balance)}\n`);
-    
-    
-
 
 }
 main();
