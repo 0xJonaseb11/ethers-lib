@@ -27,6 +27,9 @@ const main = async () => {
 
     const balance = await contract.balanceOf("0x1F334285EfdbE58034d3F24DD0703672E0741f00");
     console.log(`Balance Returned: ${balance}`);
+
+    // format ether
+    console.log(`Balance Formatted: ${ethers.utils.formatEther(balance)}\n`);
     
     
 
