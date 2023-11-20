@@ -1,4 +1,4 @@
-const { ethers, EtherSymbol } = require("ethers");
+const { ethers, EtherSymbol, ContractFactory } = require("ethers");
 
 const INFURA_ID = "";
 const provider = new ethers.providers.JsonRpcProvider( `https://mainnet.infura.io/${INFURA_ID}`);
@@ -15,6 +15,17 @@ const contract = new ethers.Contract(address, ERC20_ABI, provider);
 
 const main = async () => {
     //neet to set instances [new keyword]
+
+    const name = await contract.name();
+    const symbol = await contract.symbol();
+    const totalSupply = await contract.totalSupply();
+    
+    console.log(`Reading from: ${address}`);
+    console.log("name",name);
+    console.log(`Symbol: ${symbol}`);
+    console.log(`TotalSupply: ${totalSupply}`);
+    
+    
 
 
 }
